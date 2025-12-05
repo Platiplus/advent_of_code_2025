@@ -4,7 +4,8 @@
             [advent-of-code.day-1.safe-cracker.main :refer [safe-cracker-part-1 safe-cracker-part-2]]
             [advent-of-code.day-2.invalid-ids.main :refer [sum-invalid-ids-part-1 sum-invalid-ids-part-2]]
             [advent-of-code.day-3.joltage.main :refer [total-output-joltage-part-1 total-output-joltage-part-2]]
-            [advent-of-code.day-4.printing-department.main :refer [printing-department-part-1 printing-department-part-2]]))
+            [advent-of-code.day-4.printing-department.main :refer [printing-department-part-1 printing-department-part-2]]
+            [advent-of-code.day-5.cafeteria.main :refer [count-fresh-ingredients-part-1 count-fresh-ingredients-part-2]]))
 
 (defn day-1 []
   (println "Advent of Code - Day 1")
@@ -37,10 +38,19 @@
     (println "Part 1 result:" (printing-department-part-1 input))
     (println "Part 2 result:" (printing-department-part-2 input))))
 
+(defn day-5 []
+  (println "--------------------------------")
+  (println "Advent of Code - Day 5")
+  (println "Cafeteria")
+  (let [input (read-input "src/advent_of_code/day_5/cafeteria/test-input.txt")]
+    (println "Part 1 result:" (count-fresh-ingredients-part-1 input))
+    (println "Part 2 result:" (count-fresh-ingredients-part-2 input))))
+
 (defn -main
   "Main entry point for Advent of Code solutions"
   [& args]
   (day-1)
   (day-2)
   (day-3)
-  (day-4))
+  (day-4)
+  (day-5))
