@@ -5,7 +5,9 @@
             [advent-of-code.day-2.invalid-ids.main :refer [sum-invalid-ids-part-1 sum-invalid-ids-part-2]]
             [advent-of-code.day-3.joltage.main :refer [total-output-joltage-part-1 total-output-joltage-part-2]]
             [advent-of-code.day-4.printing-department.main :refer [printing-department-part-1 printing-department-part-2]]
-            [advent-of-code.day-5.cafeteria.main :refer [count-fresh-ingredients-part-1 count-fresh-ingredients-part-2]]))
+            [advent-of-code.day-5.cafeteria.main :refer [count-fresh-ingredients-part-1 count-fresh-ingredients-part-2]]
+            [advent-of-code.day-6.trash-compactor.main :refer [trash-compactor-part-1 trash-compactor-part-2]]
+            [advent-of-code.day-7.laboratories.main :refer [laboratories-part-1 laboratories-part-2]]))
 
 (defn day-1 []
   (println "Advent of Code - Day 1")
@@ -46,6 +48,22 @@
     (println "Part 1 result:" (count-fresh-ingredients-part-1 input))
     (println "Part 2 result:" (count-fresh-ingredients-part-2 input))))
 
+(defn day-6 []
+  (println "--------------------------------")
+  (println "Advent of Code - Day 6")
+  (println "Trash Compactor")
+  (let [input (read-input "src/advent_of_code/day_6/trash_compactor/test-input.txt")]
+    (println "Part 1 result:" (trash-compactor-part-1 input))
+    (println "Part 2 result:" (trash-compactor-part-2 input))))
+
+(defn day-7 []
+  (println "--------------------------------")
+  (println "Advent of Code - Day 7")
+  (println "Laboratories")
+  (let [input (read-input "src/advent_of_code/day_7/laboratories/input.txt")]
+    (println "Part 1 result:" (laboratories-part-1 input))
+    (println "Part 2 result:" (laboratories-part-2 input))))
+
 (defn -main
   "Main entry point for Advent of Code solutions"
   [& args]
@@ -53,4 +71,6 @@
   (day-2)
   (day-3)
   (day-4)
-  (day-5))
+  (day-5)
+  (day-6)
+  (day-7))
