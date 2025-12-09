@@ -7,7 +7,8 @@
             [advent-of-code.day-4.printing-department.main :refer [printing-department-part-1 printing-department-part-2]]
             [advent-of-code.day-5.cafeteria.main :refer [count-fresh-ingredients-part-1 count-fresh-ingredients-part-2]]
             [advent-of-code.day-6.trash-compactor.main :refer [trash-compactor-part-1 trash-compactor-part-2]]
-            [advent-of-code.day-7.laboratories.main :refer [laboratories-part-1 laboratories-part-2]]))
+            [advent-of-code.day-7.laboratories.main :refer [laboratories-part-1 laboratories-part-2]]
+            [advent-of-code.day-8.playground.main :refer [playground-part-1 playground-part-2]]))
 
 (defn day-1 []
   (println "Advent of Code - Day 1")
@@ -60,9 +61,18 @@
   (println "--------------------------------")
   (println "Advent of Code - Day 7")
   (println "Laboratories")
-  (let [input (read-input "src/advent_of_code/day_7/laboratories/input.txt")]
+  (let [input (read-input "src/advent_of_code/day_7/laboratories/test-input.txt")]
     (println "Part 1 result:" (laboratories-part-1 input))
     (println "Part 2 result:" (laboratories-part-2 input))))
+
+(defn day-8 []
+  (println "--------------------------------")
+  (println "Advent of Code - Day 8")
+  (println "Playground")
+  (let [input (read-input "src/advent_of_code/day_8/playground/test-input.txt")]
+    (println "Part 1 result:" (playground-part-1 input))
+    (println "Part 2 result:" (playground-part-2 input)))
+  )
 
 (defn -main
   "Main entry point for Advent of Code solutions"
@@ -73,4 +83,5 @@
   (day-4)
   (day-5)
   (day-6)
-  (day-7))
+  (day-7)
+  (day-8))
